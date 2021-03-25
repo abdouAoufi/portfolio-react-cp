@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {Component} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
@@ -15,7 +16,7 @@ import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import {StyleProvider} from "../contexts/StyleContext";
-import "./Main.css";
+import "./Main.css"; // ! importing css file
 import Profile from "./profile/Profile";
 
 export default class Main extends Component {

@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import "./StartupProjects.css";
 import {bigProjects} from "../../portfolio";

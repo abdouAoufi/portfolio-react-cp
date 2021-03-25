@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import "./Blog.css";
 import BlogCard from "../../components/blogCard/BlogCard";

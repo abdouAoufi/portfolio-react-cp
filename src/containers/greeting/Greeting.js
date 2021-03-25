@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";

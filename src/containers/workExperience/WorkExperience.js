@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import "./WorkExperience.css";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";

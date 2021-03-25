@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";

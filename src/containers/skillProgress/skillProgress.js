@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React from "react";
 import "./Progress.css";
 import {illustration, techStack} from "../../portfolio";

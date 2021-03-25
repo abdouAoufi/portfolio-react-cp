@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import "./Achievement.css";
 import AchievementCard from "../../components/achievementCard/AchievementCard";

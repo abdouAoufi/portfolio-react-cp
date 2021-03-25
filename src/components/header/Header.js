@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.css";
