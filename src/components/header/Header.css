@@ -18,6 +18,7 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  border-bottom : 1px solid magenta ;
 }
 
 .header ul {

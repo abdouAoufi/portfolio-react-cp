@@ -19,15 +19,14 @@
   color: #868e96 !important;
 }
 
-.greeting-main {
-  display: flex;
-}
+ 
 
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
 }
 .button-greeting-div {
+
   display: flex;
   margin-top: 20px;
 }

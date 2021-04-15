@@ -1,5 +1,5 @@
 /* jshint ignore:start */
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -15,7 +15,7 @@ import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
-import {StyleProvider} from "../contexts/StyleContext";
+import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.css"; // ! importing css file
 import Profile from "./profile/Profile";
 
@@ -23,7 +23,7 @@ export default class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDark: false
+      isDark: false,
     };
   }
 
@@ -32,10 +32,10 @@ export default class Main extends Component {
       const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
       localStorage.setItem("isDark", darkPref.matches);
     }
-    this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
+    this.setState({ isDark: JSON.parse(localStorage.getItem("isDark")) });
   }
   changeTheme = () => {
-    this.setState({isDark: !this.state.isDark}, () => {
+    this.setState({ isDark: !this.state.isDark }, () => {
       localStorage.setItem("isDark", this.state.isDark);
     });
   };
@@ -44,12 +44,12 @@ export default class Main extends Component {
     return (
       <div className={this.state.isDark ? "dark-mode" : null}>
         <StyleProvider
-          value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
+          value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
+          <Header /> {/* ? cheked */}
+          <Greeting /> {/* ? cheked */}
+          <Skills /> {/* ? cheked */}
+          <StackProgress /> {/* ? cheked */}
           <Education />
           <WorkExperience />
           <Projects />

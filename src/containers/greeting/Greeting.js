@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import {Roll} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.css";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -17,7 +17,7 @@ export default function Greeting() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <Roll bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -49,7 +49,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
+          {/* <div className="greeting-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
@@ -58,9 +58,9 @@ export default function Greeting() {
                 src={require("../../assets/images/manOnTable.svg")}
               ></img>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
-    </Fade>
+    </Roll>
   );
 }
